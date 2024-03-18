@@ -1,0 +1,48 @@
+﻿@model projecPrueba.Models.Client
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Client</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NameClient)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NameClient)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dniclient)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dniclient)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AddressClient)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AddressClient)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ClientId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

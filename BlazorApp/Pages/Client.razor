@@ -1,0 +1,24 @@
+﻿@page "/client"
+
+@inject ClientService clientService
+
+<h3>Clients</h3>
+
+<table class="table">
+    @foreach (var client in clients)
+    {
+        <tr>
+            <td>@client.Name</td>
+            <!-- Otras propiedades del cliente -->
+        </tr>
+    }
+</table>
+
+@code {
+    private IEnumerable<ClientDTO> clients;
+
+    protected override async Task OnInitializedAsync()
+    {
+        clients = await clientService.GetClients();
+    }
+}

@@ -1,0 +1,99 @@
+﻿@model IEnumerable<StoreProceduresADO.Models.Client>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@if (TempData["InfoMessage"] != null)
+{
+    <div class="alert alert-info">
+        <strong>Information : @TempData["InfoMessage"] </strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span>&times;</span>
+        </button>
+    </div>
+}
+else if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        <strong>Success : @TempData["SuccessMessage"] </strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span>&times;</span>
+        </button>
+    </div>
+}
+else if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        <strong>Error : @TempData["ErrorMessage"] </strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span>&times;</span>
+        </button>
+    </div>
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameClient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastnameClient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DNIClient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdressClient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.status)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameClient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastnameClient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DNIClient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdressClient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.status)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {id=item.ClientId}, new{@class="btn btn-primary"}) |
+                    @Html.ActionLink("Details", "Details", new { id=item.ClientId}, new{@class="btn btn-success"}) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.ClientId}, new{@class="btn btn-danger"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

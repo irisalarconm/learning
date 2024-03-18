@@ -1,0 +1,15 @@
+C:\platzi\linq\bin\Debug\net7.0\linq.exe
+C:\platzi\linq\bin\Debug\net7.0\linq.deps.json
+C:\platzi\linq\bin\Debug\net7.0\linq.runtimeconfig.json
+C:\platzi\linq\bin\Debug\net7.0\linq.dll
+C:\platzi\linq\bin\Debug\net7.0\linq.pdb
+C:\platzi\linq\obj\Debug\net7.0\linq.csproj.AssemblyReference.cache
+C:\platzi\linq\obj\Debug\net7.0\linq.GeneratedMSBuildEditorConfig.editorconfig
+C:\platzi\linq\obj\Debug\net7.0\linq.AssemblyInfoInputs.cache
+C:\platzi\linq\obj\Debug\net7.0\linq.AssemblyInfo.cs
+C:\platzi\linq\obj\Debug\net7.0\linq.csproj.CoreCompileInputs.cache
+C:\platzi\linq\obj\Debug\net7.0\linq.dll
+C:\platzi\linq\obj\Debug\net7.0\refint\linq.dll
+C:\platzi\linq\obj\Debug\net7.0\linq.pdb
+C:\platzi\linq\obj\Debug\net7.0\linq.genruntimeconfig.cache
+C:\platzi\linq\obj\Debug\net7.0\ref\linq.dll

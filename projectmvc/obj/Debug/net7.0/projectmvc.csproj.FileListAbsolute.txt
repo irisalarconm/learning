@@ -1,0 +1,8 @@
+C:\platzi\projectmvc\obj\Debug\net7.0\projectmvc.csproj.AssemblyReference.cache
+C:\platzi\projectmvc\obj\Debug\net7.0\projectmvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\platzi\projectmvc\obj\Debug\net7.0\projectmvc.AssemblyInfoInputs.cache
+C:\platzi\projectmvc\obj\Debug\net7.0\projectmvc.AssemblyInfo.cs
+C:\platzi\projectmvc\obj\Debug\net7.0\projectmvc.csproj.CoreCompileInputs.cache
+C:\platzi\projectmvc\obj\Debug\net7.0\projectmvc.MvcApplicationPartsAssemblyInfo.cache
+C:\platzi\projectmvc\obj\Debug\net7.0\projectmvc.RazorAssemblyInfo.cache
+C:\platzi\projectmvc\obj\Debug\net7.0\projectmvc.RazorAssemblyInfo.cs
